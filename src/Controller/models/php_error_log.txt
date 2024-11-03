@@ -1,0 +1,48 @@
+[03-Nov-2024 10:31:32 UTC] Attempting to fetch attributes for product ID: apple-imac-2021
+[03-Nov-2024 10:31:36 UTC] Attributes found for product ID: apple-imac-2021
+[03-Nov-2024 10:31:39 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Users\Administrator\scandiweb\fullstack-test-starter\src\Controller\Config\Database.php on line 16
+[03-Nov-2024 10:35:13 UTC] Fetching category for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:14 UTC] Fetching price for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:17 UTC] Attempting to fetch attributes for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:18 UTC] No attributes found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:18 UTC] No attributes found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:18 UTC] Attempting to fetch gallery for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:19 UTC] Gallery images found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:19 UTC] Fetching category for product ID: apple-airtag
+[03-Nov-2024 10:35:20 UTC] Fetching price for product ID: apple-airtag
+[03-Nov-2024 10:35:24 UTC] Attempting to fetch attributes for product ID: apple-airtag
+[03-Nov-2024 10:35:26 UTC] No attributes found for product ID: apple-airtag
+[03-Nov-2024 10:35:26 UTC] No attributes found for product ID: apple-airtag
+[03-Nov-2024 10:35:26 UTC] Attempting to fetch gallery for product ID: apple-airtag
+[03-Nov-2024 10:35:27 UTC] Gallery images found for product ID: apple-airtag
+[03-Nov-2024 10:35:27 UTC] Fetching category for product ID: apple-imac-2021
+[03-Nov-2024 10:35:28 UTC] Fetching price for product ID: apple-imac-2021
+[03-Nov-2024 10:35:31 UTC] Attempting to fetch attributes for product ID: apple-imac-2021
+[03-Nov-2024 10:35:36 UTC] Attributes found for product ID: apple-imac-2021
+[03-Nov-2024 10:35:39 UTC] Attempting to fetch gallery for product ID: apple-imac-2021
+[03-Nov-2024 10:35:40 UTC] Gallery images found for product ID: apple-imac-2021
+[03-Nov-2024 10:35:40 UTC] Fetching category for product ID: apple-iphone-12-pro
+[03-Nov-2024 10:35:41 UTC] Fetching price for product ID: apple-iphone-12-pro
+[03-Nov-2024 10:35:42 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Users\Administrator\scandiweb\fullstack-test-starter\src\Controller\Config\Database.php on line 16
+[03-Nov-2024 10:35:44 UTC] Fetching category for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:44 UTC] Fetching price for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:48 UTC] Attempting to fetch attributes for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:49 UTC] No attributes found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:49 UTC] No attributes found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:49 UTC] Attempting to fetch gallery for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:50 UTC] Gallery images found for product ID: apple-airpods-pro
+[03-Nov-2024 10:35:50 UTC] Fetching category for product ID: apple-airtag
+[03-Nov-2024 10:35:50 UTC] Fetching price for product ID: apple-airtag
+[03-Nov-2024 10:35:54 UTC] Attempting to fetch attributes for product ID: apple-airtag
+[03-Nov-2024 10:35:55 UTC] No attributes found for product ID: apple-airtag
+[03-Nov-2024 10:35:55 UTC] No attributes found for product ID: apple-airtag
+[03-Nov-2024 10:35:55 UTC] Attempting to fetch gallery for product ID: apple-airtag
+[03-Nov-2024 10:35:56 UTC] Gallery images found for product ID: apple-airtag
+[03-Nov-2024 10:35:56 UTC] Fetching category for product ID: apple-imac-2021
+[03-Nov-2024 10:35:57 UTC] Fetching price for product ID: apple-imac-2021
+[03-Nov-2024 10:36:03 UTC] Attempting to fetch attributes for product ID: apple-imac-2021
+[03-Nov-2024 10:36:08 UTC] Attributes found for product ID: apple-imac-2021
+[03-Nov-2024 10:36:11 UTC] Attempting to fetch gallery for product ID: apple-imac-2021
+[03-Nov-2024 10:36:12 UTC] Gallery images found for product ID: apple-imac-2021
+[03-Nov-2024 10:36:12 UTC] Fetching category for product ID: apple-iphone-12-pro
+[03-Nov-2024 10:36:13 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\Users\Administrator\scandiweb\fullstack-test-starter\src\Controller\models\Product.php on line 171
