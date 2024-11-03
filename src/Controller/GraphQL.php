@@ -2,11 +2,13 @@
 
 namespace App\Controller;
 
+use App\Controller\Mutation\OrderMutation;
 use GraphQL\GraphQL as GraphQLBase;
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
 use GraphQL\Type\Schema;
 use GraphQL\Type\SchemaConfig;
+use App\Controller\Query\ProductQuery;
 use RuntimeException;
 use Throwable;
 
@@ -15,29 +17,36 @@ class GraphQL {
         try {
             $queryType = new ObjectType([
                 'name' => 'Query',
-                'fields' => [
-                    'echo' => [
-                        'type' => Type::string(),
-                        'args' => [
-                            'message' => ['type' => Type::string()],
+                'fields' => array_merge(
+                    [
+                        'echo' => [
+                            'type' => Type::string(),
+                            'args' => [
+                                'message' => ['type' => Type::string()],
+                            ],
+                            'resolve' => static fn ($rootValue, array $args): string => $rootValue['prefix'] . $args['message'],
                         ],
-                        'resolve' => static fn ($rootValue, array $args): string => $rootValue['prefix'] . $args['message'],
                     ],
-                ],
+                    (new ProductQuery())->config['fields'] // Add ProductQuery fields directly
+                ),
             ]);
         
+            // Add OrderMutation to the Mutation Type
             $mutationType = new ObjectType([
                 'name' => 'Mutation',
-                'fields' => [
-                    'sum' => [
-                        'type' => Type::int(),
-                        'args' => [
-                            'x' => ['type' => Type::int()],
-                            'y' => ['type' => Type::int()],
+                'fields' => array_merge(
+                    [
+                        'sum' => [
+                            'type' => Type::int(),
+                            'args' => [
+                                'x' => ['type' => Type::int()],
+                                'y' => ['type' => Type::int()],
+                            ],
+                            'resolve' => static fn ($calc, array $args): int => $args['x'] + $args['y'],
                         ],
-                        'resolve' => static fn ($calc, array $args): int => $args['x'] + $args['y'],
                     ],
-                ],
+                    (new OrderMutation())->config['fields'] // Add OrderMutation fields directly
+                ),
             ]);
         
             // See docs on schema options:
