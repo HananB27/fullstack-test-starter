@@ -2,8 +2,7 @@
 
 namespace App\Controller\Models;
 require_once __DIR__  . "/../../../vendor/autoload.php";
-ini_set("log_errors", 1);
-ini_set("error_log", __DIR__ . "/php_error_log.txt");
+
 use App\Controller\Config\Database;
 
 class Product
@@ -58,7 +57,7 @@ class Product
         }
     
         if (empty($attributes)) {
-            error_log("No attributes found for product ID: " . $productId);
+            error_log(message: "No attributes found for product ID: " . $productId);
         }
     
         return $attributes;
